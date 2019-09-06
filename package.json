@@ -1,6 +1,6 @@
 {
   "name": "@jsjoeio/react-use-chuck-norris",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A custom React Hook which gives you a Chuck Norris joke",
   "author": "jsjoeio",
   "license": "MIT",

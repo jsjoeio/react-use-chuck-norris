@@ -1,12 +1,13 @@
 import React from 'react'
-import { useMyHook } from '@jsjoeio/react-use-chuck-norris'
+import { useChuckNorris } from '@jsjoeio/react-use-chuck-norris'
 
 const App = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
+  const { data, loading } = useChuckNorris()
+
+  if (loading) return <p>Loading...</p>
+
+  if (data) return <p>{data}</p>
+
+  return null
 }
 export default App

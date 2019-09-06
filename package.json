@@ -22,7 +22,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "publishConfig": {
-    "access": "public",
+    "access": "public"
   },
   "peerDependencies": {
     "react": "^16.8.6"

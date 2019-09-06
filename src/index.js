@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 export function useChuckNorris() {
   const [loading, setLoading] = useState(false)

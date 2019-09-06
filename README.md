@@ -15,12 +15,20 @@ npm install --save @jsjoeio/react-use-chuck-norris
 ```jsx
 import React, { Component } from 'react'
 
-import { useMyHook } from '@jsjoeio/react-use-chuck-norris'
+import { useChuckNorris } from '@jsjoeio/react-use-chuck-norris'
 
 const Example = () => {
-  const example = useMyHook()
+  const { data, loading, error} = useChuckNorris()
+
+  if (loading) return <p>Loading...</p>
+
+  if (error) return <p>Oh no! There was an error: {error}</p>
+
+if (data)
+  // Data returns a Chuck Norris joke as a string
+  // Each joke is random
   return (
-    <div>{example}</div>
+    <p>{data}</p>
   )
 }
 ```
